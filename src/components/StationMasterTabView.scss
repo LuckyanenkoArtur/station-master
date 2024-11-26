@@ -1,0 +1,57 @@
+.subsection {
+  background-color: rgb(245, 245, 245);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  max-height: 40vh;
+}
+
+.subsection-title {
+  color: black;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.subsection-value {
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+
+.subsection-metrics {
+  .meter-group-container {
+    padding-top: 1rem;
+  }
+  .knobs-metrics-group {
+    display: flex;
+    padding-top: 2rem;
+
+    .free-space-knob {
+      padding-right: 5rem;
+    }
+
+    .free-space-knob,
+    .taken-space-knob {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .knob-title {
+        font-weight: 500;
+        color: black;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+.subsection-multiple {
+  background-color: rgb(245, 245, 245);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  max-height: 40vh;
+  display: flex;
+  gap: 10rem;
+}
