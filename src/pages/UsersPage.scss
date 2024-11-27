@@ -1,0 +1,23 @@
+.user-managment-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 15%;
+
+  .user-create-form,
+  .user-delete-user {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    label {
+      padding-right: 2rem;
+    }
+  }
+
+  .user-form-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+  }
+}

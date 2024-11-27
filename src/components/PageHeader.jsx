@@ -1,4 +1,3 @@
-import { items } from "../data/menubar";
 import { Menubar } from "primereact/menubar";
 import { Button } from "primereact/button";
 import { useDispatch } from "react-redux";
@@ -6,10 +5,28 @@ import { useLogoutMutation } from "../api/redux/features/authentication/authApiS
 import { logOut } from "../api/redux/features/authentication/authSlice";
 import { useNavigate } from "react-router-dom";
 
-const PageHeader = () => {
+const Navigation = () => {
   const dispatch = useDispatch();
   const [logout] = useLogoutMutation();
   const navigate = useNavigate();
+
+  const items = [
+    {
+      label: "Главная панель",
+      icon: "pi pi-home",
+      command: () => navigate("/"),
+    },
+    {
+      label: "Управление  поездами",
+      icon: "pi pi-truck",
+      command: () => navigate("/train-management"),
+    },
+    {
+      label: "Управления пользователями",
+      icon: "pi pi-users",
+      command: () => navigate("/user-management"),
+    },
+  ];
 
   const handleLogout = async () => {
     try {
@@ -27,16 +44,12 @@ const PageHeader = () => {
   };
 
   return (
-    <header>
-      <Menubar
-        model={items}
-        start={<div style={{ fontSize: "3rem" }}>🚉</div>}
-        end={
-          <Button label="Выход" className="mr-auto" onClick={handleLogout} />
-        }
-      />
-    </header>
+    <Menubar
+      model={items}
+      start={<div style={{ fontSize: "3rem" }}>🚊</div>}
+      end={<Button label="Выход" onClick={handleLogout} className="mr-auto" />}
+    />
   );
 };
 
-export default PageHeader;
+export default Navigation;

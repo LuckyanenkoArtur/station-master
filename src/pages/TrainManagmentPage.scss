@@ -1,0 +1,29 @@
+.train-management-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 5%; // ! If desktop resolution 15%
+}
+
+.train-form-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+.train-create-form,
+.train-delete-user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.input-train-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  label {
+    padding-right: 2rem;
+  }
+}
