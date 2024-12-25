@@ -7,7 +7,7 @@ import {
   arrivalAdditionalColumns,
   arrivalMainColumns,
 } from "../../data/columns";
-import { servicesTemplate, carDetailsTemplate } from "../../utils/datatables";
+import { servicesTemplate } from "../../utils/datatables";
 
 const ArrivalTabView = () => {
   const [trainInfo] = useState(() => {
@@ -47,7 +47,6 @@ const ArrivalTabView = () => {
             {arrivalMainColumns.map((col) => (
               <Column key={col.field} field={col.field} header={col.header} />
             ))}
-            <Column header="Количество вагонов" body={carDetailsTemplate} />
           </DataTable>
 
           <h3 className="text-lg mb-2">Дополнительная информация</h3>

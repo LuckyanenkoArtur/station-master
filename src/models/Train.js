@@ -9,11 +9,6 @@ export class TrainInfo {
     this.departureStation = data.departureStation || "";
     this.arrivalTime = data.arrivalTime || "";
     this.arrivalStation = data.arrivalStation || "";
-    this.numberOfCars = data.numberOfCars || {
-      platzkart: 0,
-      kupe: 0,
-      sv: 0,
-    };
     this.additionalInfo = data.additionalInfo || {
       departure: {
         delay: "",

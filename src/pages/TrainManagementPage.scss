@@ -1,0 +1,21 @@
+.panel-container {
+  padding: 0 10%;
+  padding-top: 3rem;
+  .form-container {
+    .input-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+
+      label {
+        font-size: 1.1rem;
+        font-weight: 700;
+      }
+
+      .input-field {
+        width: 25rem;
+      }
+    }
+  }
+}

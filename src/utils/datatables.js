@@ -7,11 +7,4 @@ const servicesTemplate = (rowData, field) => {
   return (services || []).join(", ");
 };
 
-// Шаблон для отображения сложных объектов
-const carDetailsTemplate = (rowData) => {
-  return Object.entries(rowData.numberOfCars || {})
-    .map(([type, count]) => `${type.toUpperCase()}: ${count}`)
-    .join(", ");
-};
-
-export { servicesTemplate, carDetailsTemplate };
+export { servicesTemplate };

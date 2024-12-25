@@ -1,0 +1,32 @@
+.main-forms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.form-container {
+  padding: 2rem;
+  width: 95vw;
+  height: 50vh;
+  background-color: #f9f9f9; /* Light gray background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 8px; /* Rounded corners for a modern look */
+
+  .form-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+
+  .dropdown-container {
+    padding-top: 2rem;
+    .p-inputtext {
+      width: 15rem;
+    }
+  }
+
+  .btn-container {
+    padding-top: 3rem;
+  }
+}

@@ -128,7 +128,6 @@ const UsersPage = () => {
   return (
     <div>
       <Toast ref={toast} />
-      <PageHeader />
       <div className="user-managment-container">
         <div>
           <div className="user-form-header">Создание пользователя</div>

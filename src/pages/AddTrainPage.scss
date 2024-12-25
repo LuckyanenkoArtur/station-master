@@ -1,0 +1,58 @@
+// Variables
+$grid-gap: 1.5rem;
+$nested-container-bg: #f9f9f9;
+$border-color: #ddd;
+
+// General Grid Layout
+.input-grid,
+.departure-info-section,
+.arrival-info-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // Two equal columns
+  gap: $grid-gap;
+  padding: 1rem;
+}
+
+// Input Container Styles
+.input-container {
+  display: flex;
+  flex-direction: column; // Stack label and input vertically
+
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .p-inputtext {
+    width: 100%;
+    max-width: 35rem; // Limit width for better layout
+    height: 2rem;
+  }
+
+  .p-datepicker-trigger {
+    display: none; // Hide unwanted date picker trigger
+  }
+
+  .label {
+    padding-bottom: 1rem;
+  }
+}
+
+// Nested Container for Grouped Fields
+.nested-input-container {
+  display: flex;
+  padding: 1rem;
+
+  .input-container {
+    // display: none;
+  }
+
+  div {
+    font-weight: bold;
+  }
+}
+
+// Input Field Styling
+.input-field {
+  width: 100%; // Ensure inputs take full width
+}
